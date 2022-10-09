@@ -1,0 +1,103 @@
+:root {
+    --clr-background-one: #
+
+    /* accessability colors */
+    --clr-white: #fff;
+    --clr-acces-white-secondary: #FAF9F6;
+    --clr-acces-white-tertiary: #F9F6EE;
+    --clr-acces-white-four: #EDEADE; 
+
+    --clr-black: #1B1212;
+    --clr-acces-black-secondary: #28282B;
+    --clr--acces-black-tertiary: #343434;
+    --clr-acces-black-four: #36454F;
+
+    --transition: all .4s ease;
+
+    /* colors */
+    --clr-white-grey: #eaeaea;
+    --clr-aqua-blue: #00D1CD;
+    --clr-red-pink: #F30067;
+    --clr-black-grey: #444444;
+    --clr-dark-aquablue: #0A97B0;
+}
+
+.about_me {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 25%);
+    background-color: var(--clr-white-tertiary);
+}
+
+.about_me h1, .about_me p, .about_me img {
+    justify-self: center;
+    align-self: center;
+    grid-row: 2/ 4;
+}
+
+.about_me h1 {
+    grid-column: 1 / 2;
+    z-index: 2;
+    color: var(--clr-white-secondary);
+}
+
+.about_me p {
+    grid-column: 2 / 3;
+    text-align: center;
+    z-index: 2;
+    color: var(--clr-white-tertiary);
+}
+
+.about_me img {
+    grid-column: 3 / 4;
+    height: 450px;
+    width: 300px;
+    z-index: 2;
+    margin-right: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.414) 0px 10px 25px;
+    border-radius: 8px;
+
+    transition: var(--transition);
+}
+
+.about_me_background {
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    margin-left: 3%;
+    margin-right: 20%;
+    background-color: rgb(54, 53, 53);
+}
+
+@media screen and (max-width: 1025px) {
+    .about_me img {
+        height: 350px;
+        width: 200px;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .about_me {
+        grid-template-columns: none;
+        grid-template-rows:max-content;
+        background-color: rgb(54, 53, 53);
+    }
+    .about_me h1{
+        grid-column: 1;
+        grid-row: 4 / 6;
+    }
+
+    .about_me p {
+        grid-column: 1;
+        grid-row: 6 / 8;
+    }
+
+    .about_me img {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        margin-right: 0;
+    }
+
+    .about_me_background {
+       display: none;
+    }
+}

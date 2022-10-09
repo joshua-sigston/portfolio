@@ -1,0 +1,100 @@
+:root {
+    --clr-background-one: #
+
+    /* accessability colors */
+    --clr-white: #fff;
+    --clr-acces-white-secondary: #FAF9F6;
+    --clr-acces-white-tertiary: #F9F6EE;
+    --clr-acces-white-four: #EDEADE; 
+
+    --clr-black: #1B1212;
+    --clr-acces-black-secondary: #28282B;
+    --clr--acces-black-tertiary: #343434;
+    --clr-acces-black-four: #36454F;
+
+    --transition: all .4s ease;
+
+    /* colors */
+    --clr-white-grey: #eaeaea;
+    --clr-aqua-blue: #00D1CD;
+    --clr-red-pink: #F30067;
+    --clr-black-grey: #444444;
+    --clr-dark-aquablue: #0A97B0;
+}
+
+
+@media screen and (max-width: 890px) {
+    .nav_frame {
+        display: none;
+    }
+
+    .mobile_nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        transform: translateX(200%);
+        z-index: 10;
+        transition: all 0.6s ease;
+    }
+
+    .hamburger_menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: space-between;
+        top: 0;
+        right: 0;
+        z-index: 11;
+        width: 7%;
+        height: 7%;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    
+        transition: all 0.6s ease;
+    }
+
+    .hamburger_line {
+        height: 8px;
+        width: 100%;
+        border-radius: 3px;
+        background-color: var(--clr-dark-aquablue);
+        margin: 15px 0;
+        transition: all 0.6s ease;
+    }
+}
+
+.hamburger_menu:hover .hamburger_line, 
+.hamburger_menu:hover .hamburger_line::before, 
+.hamburger_menu:hover .hamburger_line::after {
+    background-color: var(--clr-red-pink);
+}
+
+.hamburger_line::before, .hamburger_line::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: var(--clr-dark-aquablue);
+    transition: all 0.6s ease;
+}
+
+.hamburger_line::before {
+    top: 0;
+}
+
+.hamburger_line::after {
+    top: 30px;
+}
+
+/* onclick functionality */
+.is_active {
+    width: 50%;
+}
+
+.mobile_nav_reveal {
+    transform: translateX(0%);
+}

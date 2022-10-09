@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <!-- styles link -->
+    <link rel="stylesheet" href="/styles/styles-general.css">
+    <link rel="stylesheet" href="/styles/styles-top-section.css">
+    <link rel="stylesheet" href="/styles/styles-about-me.css">
+    <link rel="stylesheet" href="/styles/styles-talents.css">
+    <link rel="stylesheet" href="/styles/styles-contact.css">
+    <link rel="stylesheet" href="/styles/styles-nav-frame.css">
+    <link rel="stylesheet" href="/styles/styles-mobile-menu.css">
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <title>My Portfolio</title>
+</head>
+<body>
+        <section class="top_section grid" id="top-section">
+
+            <div class="top flex">
+                <div class="top_lines"></div>
+            </div>
+
+            <div class="horizontal_line"></div>
+            
+            <div class="left_container flex_column">
+                <p>Welcome, <span>I Am Joshua Sigston</span></p>
+                <img src="/images/daniel-monteiro-WWcL2OQRR6c-unsplash.jpg" alt="">
+            </div>
+    
+            <div class="nav_container flex_column">
+                <nav class="flex_column">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#talents">Talents</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </nav>
+                <div class="nav_subtitles">
+                    <p>An aspiring <span>Web Developer</span></p></div>
+            </div>
+
+            <div class="vertical_line"></div>
+           
+            <div class="bottom_of_top flex_column">
+                <h3>Explore</h3>
+                <div class="explore_line"></div>
+            </div> 
+    
+            <div class="background"></div>
+        </section>
+    
+        <section class="about_me grid" id="about-me">
+            <h1>Who I Am</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nemo veritatis dolorem magnam quas quam quisquam ipsum harum eveniet cum.</p>
+            <img src="/images/daniel-monteiro-WWcL2OQRR6c-unsplash.jpg" alt="">
+            <div class="about_me_background"></div>
+        </section>
+    
+        <section class="talents flex" id="talents">
+            <div class="panel grid">
+                <div class="left_panel_col col_one"></div>
+                <div class="left_panel_col col_two"></div>
+                <div class="left_panel_col col_three flex_column">
+                    <h1 class="inactive talent_item">UI/UX</h1>
+                    <h1 class="inactive talent_item">Adobe</h1>
+                    <h1 class="inactive talent_item">Figma</h1>
+                    <h1 id="design-title">Design</h1>
+                </div>
+                <div class="left_panel_col col_four"></div>
+                <div class="left_panel_col col_five flex">
+                    <p class="inactive back_button_design">BACK</p>
+                </div>
+            </div>
+            
+            <div class="panel web grid">
+                <div class="right_panel_col col_one"></div>
+                <div class="right_panel_col col_two flex"></div>
+                <div class="right_panel_col col_three flex_column">
+                    <h1 class="web_talent_item inactive">HTML</h1>
+                    <h1 class="web_talent_item inactive">CSSL</h1>
+                    <h1 class="web_talent_item inactive">JS</h1>
+                    <h1 class="web_talent_item inactive">REACT</h1>
+                    <h1 class="web_talent_item inactive">PYTHON</h1>
+                    <h1 class="web_title">Web</h1>
+                </div>         
+                <div class="right_panel_col col_four"></div>
+                <div class="right_panel_col col_five flex"><p class="inactive back_button_web">BACK</p></div>
+            </div>
+        </section>
+
+        <section class="contact flex_column" id="contact">
+            <h1>Contact Me</h1>
+            <form action="" method="" class="flex_column">
+                <input type="text" name="name" id="name" autocomplete="off" class="input_name" required>
+                <label for="name" class="label_name">
+                    <span class="content_name">Name</span>
+                </label>
+                <input type="email" name="email" id="email" autocomplete="off" class="input_email" required>
+                <label for="email" class="label_email">
+                    <span class="content_email">Email</span>
+                </label>
+                <textarea name="textarea" id="" cols="30" rows="10" class="textarea_input" placeholder=" message" required></textarea>
+                <label for="textarea" class="label_textarea">
+                    <span class="content_textarea"></span>
+                </label>
+            </form>
+        </section>
+
+<!-- responsive navigation for desktop to pad -->
+
+        <div class="nav_frame left_frame flex_column inactive" id="nav-frame">
+            <div class="left_line"></div>
+            <div class="social_media flex_column">
+                <i class="fa-brands fa-square-github"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+
+        <div class="nav_frame right_frame flex_column inactive" id="nav-frame">
+            <div class="nav_side_bar flex_column">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#talents">Talents</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top-section" class="back_to_top"><i class="fa-solid fa-circle-up"></i></a></li>
+            </div>
+            <div class="right_line"></div>
+        </div>
+
+<!-- mobile navigation -->
+
+    <div class="hamburger_menu inactive" id="hamburger-menu">
+        <div class="hamburger_line"></div>   
+    </div>
+    <nav class="mobile_nav inactive" id="mobile-nav">
+        <li><a href="#about-me" class="mobile_link">About Me</a></li>
+        <li><a href="#talents" class="mobile_link">Talents</a></li>
+        <li><a href="#projects" class="mobile_link">Projects</a></li>
+        <li><a href="#contact" class="mobile_link">Contact</a></li>
+    </nav>
+        
+</body>
+
+<script src="/scripts/script-talents-section.js"></script>
+<script src="/scripts/script-nav-frame.js"></script>
+<script src="/scripts/script-mobile-nav.js"></script>
+
+</html>

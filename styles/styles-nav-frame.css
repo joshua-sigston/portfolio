@@ -1,0 +1,145 @@
+:root {
+    --clr-background-one: #
+
+    /* accessability colors */
+    --clr-white: #fff;
+    --clr-white-secondary: #FAF9F6;
+    --clr-white-tertiary: #F9F6EE;
+    --clr-white-four: #EDEADE; 
+
+    --clr-black: #1B1212;
+    --clr-black-secondary: #28282B;
+    --clr-black-tertiary: #343434;
+    --clr-black-four: #36454F;
+
+    --transition: all .4s ease;
+
+    /* colors */
+    --clr-white-grey: #eaeaea;
+    --clr-aqua-blue: #00D1CD;
+    --clr-red-pink: #F30067;
+    --clr-black-grey: #444444;
+
+}
+
+.nav_frame.left_frame {
+    position: fixed;
+    top: 0;
+    left: .5%;
+    height: 100%;
+    padding: 1.3rem;
+    /* width: 100%; */
+    transition: all .5s ease-in-out;
+}
+
+.nav_frame.right_frame {
+    position: fixed;
+    top: 0;
+    right: .5%;
+    width: 10%;
+    height: 100%;
+    padding: 1.3rem;
+}
+
+/* .nav_frame .top_line {
+    width: 0;
+    border-top: 3px solid black;
+
+    animation: width 1.5s ease .5s forwards;
+} */
+
+.nav_frame .left_line {
+    height: 0;
+    border-left: 3px solid black;
+    animation: height 1.5s ease forwards;
+}
+
+.nav_frame .right_line {
+    position: relative;
+    top: 50%;
+    height: 0;
+    border-right: 3px solid black;
+    animation: height 1.5s ease 1s forwards;
+}
+
+/* .nav_frame .bottom_line {
+    width: 0;
+    border-bottom: 3px solid black;
+
+    animation: width 1.5s ease 2s forwards;
+} */
+
+/* @keyframes width {
+    100% {
+        width: 100%;
+    }
+} */
+
+@keyframes height {
+    100% {
+        height: 50%;
+    }
+}
+
+.nav_side_bar, .social_media {
+    position: absolute;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav_side_bar {
+    top: 2.5rem;
+    right: .5rem;
+    height: 40%;
+    opacity: 0;
+
+    animation: nav 1.5s ease 1s forwards;
+}
+
+@keyframes nav {
+    100% {
+        opacity: 1;
+    }
+}
+
+.social_media {
+    bottom: 2.5rem;
+    left: .5rem;
+    height: 40%;
+    opacity: 0;
+    justify-content: space-between;
+    
+
+    animation: social 1.5s ease 1s forwards;
+}
+
+.social_media i {
+    color: var(--clr-aqua-blue);
+    transition: all .6s ease-in-out;
+}
+
+.social_media i:hover {
+    color: var(--clr-red-pink);
+}
+
+@keyframes social {
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .nav_frame a {
+        font-size: 1.5rem;
+        color: #00D1CD;
+    }
+}
+
+.social_media i:hover {
+    cursor: pointer;
+}
+
+.back_to_top {
+    font-size: 1.3rem;
+    width: 100%;
+}

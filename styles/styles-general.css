@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Alumni+Sans+Pinstripe&family=Alumni+Sans:wght@400;600&family=Smooch+Sans:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+
+    /* font-family: 'Alumni Sans', sans-serif;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: 'Smooch Sans', sans-serif; */
+}
+
+:root {
+    --clr-background-one: #
+
+    /* accessability colors */
+    --clr-white: #fff;
+    --clr-acces-white-secondary: #FAF9F6;
+    --clr-acces-white-tertiary: #F9F6EE;
+    --clr-acces-white-four: #EDEADE; 
+
+    --clr-black: #1B1212;
+    --clr-acces-black-secondary: #28282B;
+    --clr--acces-black-tertiary: #343434;
+    --clr-acces-black-four: #36454F;
+
+    --transition: all .4s ease;
+
+    /* colors */
+    --clr-white-grey: #eaeaea;
+    --clr-aqua-blue: #00D1CD;
+    --clr-red-pink: #F30067;
+    --clr-black-grey: #444444;
+    --clr-dark-aquablue: #0A97B0;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-color: var(--clr-white-grey);
+    /* background-color: var(--clr-white);  */
+    /* color: var(--clr-black); */
+}
+
+/* main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+} */
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+a {
+    font-family: 'Alumni Sans Inline One', cursive;
+    color: var(--clr-black-tertiary);
+    text-decoration: none;
+    font-size: 1.9rem;
+}
+
+i {
+    font-size: 2rem;
+}
+
+.fa-square-left {
+    font-size: 5rem;
+    color: var(--clr-black-four);
+    background-color: var(--clr-black);
+}
+
+section {
+    height: 100vh;
+    padding: 1.3rem;
+    scroll-snap-align: start;
+}
+
+.inactive {
+    display: none;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+@media screen and (max-width: 890px) {
+    section, .top_section, .about_me, .talents, .contact {
+        padding: 0;
+        margin: 0;
+    }
+}
