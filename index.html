@@ -7,111 +7,160 @@
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <!-- styles link -->
-    <link rel="stylesheet" href="styles/styles-general.css">
-    <link rel="stylesheet" href="styles/styles-top-section.css">
-    <link rel="stylesheet" href="styles/styles-about-me.css">
-    <link rel="stylesheet" href="styles/styles-talents.css">
-    <link rel="stylesheet" href="styles/styles-contact.css">
-    <link rel="stylesheet" href="styles/styles-nav-frame.css">
-    <link rel="stylesheet" href="styles/styles-mobile-menu.css">
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Josefin+Sans:wght@300&family=NTR&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
-        <section class="top_section grid" id="top-section">
 
-            <div class="top flex">
-                <div class="top_lines"></div>
+    <div class="nav_container">
+            <nav class="nav" id="nav">
+                <li><a href="#about-me" class="nav_item">About Me</a></li>
+                <li><a href="#projects" class="nav_item">Projects</a></li>
+                <li><a href="#contact" class="nav_item">Contact</a></li>
+                <li><a href="#hero" class="nav_item">To Top</a></li>
+            </nav>
+        <!-- hamburger menu -->
+        <div class="hamburger_menu flex_column" id="hamburger">
+            <div class="patty" id="patty-one"></div>
+            <div class="patty" id="patty-two"></div>
+            <div class="patty" id="patty-three"></div>
+        </div>
+    </div>
+
+    <section class="hero_section flex_column center" id="hero">
+
+        <div class="content_container flex_column">
+            <div class="expression_one flex_column">
+                <p>Welcome, <span>I'm Joshua Sigston</span></p>
             </div>
 
-            <div class="horizontal_line"></div>
-            
-            <div class="left_container flex_column">
-                <p>Welcome, <span>I Am Joshua Sigston</span></p>
-                <img src="images/daniel-monteiro-WWcL2OQRR6c-unsplash.jpg" alt="">
+            <div class="social_media flex_column">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
             </div>
-    
-            <div class="nav_container flex_column">
-                <nav class="flex_column">
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#talents">Talents</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </nav>
-                <div class="nav_subtitles">
-                    <p>An aspiring <span>Web Developer</span></p></div>
+        
+            <div class="expression_two">
+                <p>aspiring <span>Web Developer</span></p>
             </div>
 
-            <div class="vertical_line"></div>
-           
-            <div class="bottom_of_top flex_column">
-                <h3>Explore</h3>
-                <div class="explore_line"></div>
-            </div> 
-    
-            <div class="background"></div>
-        </section>
-    
-        <section class="about_me grid" id="about-me">
-            <h1>Who I Am</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nemo veritatis dolorem magnam quas quam quisquam ipsum harum eveniet cum.</p>
-            <img src="images/daniel-monteiro-WWcL2OQRR6c-unsplash.jpg" alt="">
-            <div class="about_me_background"></div>
-        </section>
-    
-        <section class="talents flex" id="talents">
-            <div class="panel grid">
-                <div class="left_panel_col col_one"></div>
-                <div class="left_panel_col col_two"></div>
-                <div class="left_panel_col col_three flex_column">
-                    <h1 class="inactive talent_item">UI/UX</h1>
-                    <h1 class="inactive talent_item">Adobe</h1>
-                    <h1 class="inactive talent_item">Figma</h1>
-                    <h1 id="design-title">Design</h1>
+            <div class="expression_three">
+                <p>I build and design on the <span>Web</span> to make it a creative experience.</p>
+            </div>
+        </div>
+        
+        <div class="explore flex_column">
+            <h3>Explore</h3>
+            <div class="explore_line"></div>
+        </div> 
+
+    </section>
+
+
+    <section class="about_me grid" id="about-me">
+        <div class="divider flex_row center" id="divider-one">
+            <h3 class="flex_row center">Thanks for continuing</h3>
+        </div>
+        <div class="title_container flex_column center">
+            <h2>Who I Am</h2>
+            <div class="file_container flex_row">
+                <i class="fa-sharp fa-solid fa-envelope mail"></i>
+                <i class="fa-solid fa-file cv"></i>
+            </div>
+        </div>
+        <p class="short_bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nemo veritatis dolorem magnam quas quam quisquam ipsum harum eveniet cum.</p>
+        <img src="images/daniel-monteiro-WWcL2OQRR6c-unsplash.jpg" alt="" class="portrait">
+    </section>
+
+    <section class="projects flex_column" id="projects">
+        <div class="divider flex_row center" id="divider-two">
+            <h3 class="flex_row center">Thanks for continuing</h3>
+        </div>
+        <h2>My Resources</h2>
+        <p>Here are my projects with the languages I am using:</p>
+        
+        <div class="projects_list_container grid">
+
+            <div class="card_container">
+                <div class="project_card grid">
+                    <div class="title_container">
+                        <p>title: </p>
+                        <h2>Cafe Website</h2>
+                    </div>
+                    <p class="synopsis">A proposed website I built for a local cafe. Designed to allow the user experience the vibe of the cafe while eliminting the hassel of find what is offered.</p>
+                    <p class="languages">html - css - javacript</p>
                 </div>
-                <div class="left_panel_col col_four"></div>
-                <div class="left_panel_col col_five flex">
-                    <p class="inactive back_button_design">BACK</p>
+                <div class="project_img">
+                    <img src="/images/layout.jpg" alt="">
                 </div>
             </div>
-            
-            <div class="panel web grid">
-                <div class="right_panel_col col_one"></div>
-                <div class="right_panel_col col_two flex"></div>
-                <div class="right_panel_col col_three flex_column">
-                    <h1 class="web_talent_item inactive">HTML</h1>
-                    <h1 class="web_talent_item inactive">CSSL</h1>
-                    <h1 class="web_talent_item inactive">JS</h1>
-                    <h1 class="web_talent_item inactive">REACT</h1>
-                    <h1 class="web_talent_item inactive">PYTHON</h1>
-                    <h1 class="web_title">Web</h1>
-                </div>         
-                <div class="right_panel_col col_four"></div>
-                <div class="right_panel_col col_five flex"><p class="inactive back_button_web">BACK</p></div>
+
+            <div class="card_container">
+                <div class="project_card grid">
+                    <div class="title_container">
+                        <p>title: </p>
+                        <h2>Cafe Website</h2>
+                    </div>
+                    <p class="synopsis">A proposed website I built for a local cafe. Designed to allow the user experience the vibe of the cafe while eliminting the hassel of find what is offered.</p>
+                    <p class="languages">html - css - javacript</p>
+                </div>
+                <div class="project_img">
+                    <img src="/images/layout.jpg" alt="">
+                </div>
             </div>
-        </section>
 
-        <section class="contact flex_column" id="contact">
-            <h1>Contact Me</h1>
-            <form action="" method="" class="flex_column">
-                <input type="text" name="name" id="name" autocomplete="off" class="input_name" required>
-                <label for="name" class="label_name">
-                    <span class="content_name">Name</span>
-                </label>
-                <input type="email" name="email" id="email" autocomplete="off" class="input_email" required>
-                <label for="email" class="label_email">
-                    <span class="content_email">Email</span>
-                </label>
-                <textarea name="textarea" id="" cols="30" rows="10" class="textarea_input" placeholder=" message" required></textarea>
-                <label for="textarea" class="label_textarea">
-                    <span class="content_textarea"></span>
-                </label>
-            </form>
-        </section>
+            <div class="card_container">
+                <div class="project_card grid">
+                    <div class="title_container">
+                        <p>title: </p>
+                        <h2>Cafe Website</h2>
+                    </div>
+                    <p class="synopsis">A proposed website I built for a local cafe. Designed to allow the user experience the vibe of the cafe while eliminting the hassel of find what is offered.</p>
+                    <p class="languages">html - css - javacript</p>
+                </div>
+                <div class="project_img">
+                    <img src="/images/layout.jpg" alt="">
+                </div>
+            </div>
 
-<!-- responsive navigation for desktop to pad -->
+            <div class="card_container">
+                <div class="project_card grid">
+                    <div class="title_container">
+                        <p>title: </p>
+                        <h2>Cafe Website</h2>
+                    </div>
+                    <p class="synopsis">A proposed website I built for a local cafe. Designed to allow the user experience the vibe of the cafe while eliminting the hassel of find what is offered.</p>
+                    <p class="languages">html - css - javacript</p>
+                </div>
+                <div class="project_img">
+                    <img src="/images/layout.jpg" alt="">
+                </div>
+            </div>
 
-        <div class="nav_frame left_frame flex_column inactive" id="nav-frame">
+        </div>
+
+    </section>
+
+    <section class="contact flex_column center" id="contact">
+        <div class="divider flex_row center" id="divider-three">
+            <h3 class="flex_row center">Thanks for continuing</h3>
+        </div>
+        <h2>The many ways of contacting me</h2>
+        <div class="social_media flex_row">
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+
+    </section>
+
+
+        <!-- <div class="nav_frame left_frame flex_column inactive" id="nav-frame">
             <div class="left_line"></div>
             <div class="social_media flex_column">
                 <i class="fa-brands fa-square-github"></i>
@@ -128,7 +177,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#top-section" class="back_to_top"><i class="fa-solid fa-circle-up"></i></a></li>
             </div>
-            <div class="right_line"></div>
+            <div class="right_line"></div> -->
         </div>
 
 <!-- mobile navigation -->
@@ -145,8 +194,16 @@
         
 </body>
 
-<script src="scripts/script-talents-section.js"></script>
+<!-- functional scripts -->
+<script src="script.js"></script>
+<!-- scroll movement for dividers -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script>gsap.from("#divider-one", {scrollTrigger: {scrub: true}, y: 300})</script>
+<script>gsap.from("#divider-two", {scrollTrigger: {scrub: true}, y: 300})</script>
+<script>gsap.from("#divider-three", {scrollTrigger: {scrub: true}, y: 900})</script>
+<!-- <script src="scripts/script-talents-section.js"></script>
 <script src="scripts/script-nav-frame.js"></script>
-<script src="scripts/script-mobile-nav.js"></script>
+<script src="scripts/script-mobile-nav.js"></script> -->
 
 </html>
