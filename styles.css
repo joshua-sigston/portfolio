@@ -186,7 +186,7 @@ section {
 /* hero section */
 .hero_section {
     position: relative;
-    background-image: url('/images/backgroundImageOne.svg');
+    background-image: url('images/backgroundImageOne.svg');
     overflow: hidden;
 }
 
@@ -351,7 +351,7 @@ nav a:hover {
 
 .about_me {
     position: relative;
-    background-image: url('/images/backgroundImageThree.svg');
+    background-image: url('images/backgroundImageThree.svg');
     color: white;
     justify-items: center;
 }
@@ -387,7 +387,7 @@ nav a:hover {
 
 /* projects section */
 .projects {
-    background-image: url('/images/backgroundImageTwo.svg');
+    background-image: url('images/backgroundImageTwo.svg');
     text-align: center;
     height: fit-content;
     padding-top: 5em;
@@ -453,7 +453,7 @@ nav a:hover {
 /* contact section */
 
 .contact {
-    background-image: url('/images/backgroundImageFour.svg');
+    background-image: url('images/backgroundImageFour.svg');
     text-align: center;
     position: relative;
 }
