@@ -141,6 +141,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 img {
+    min-height: 100%;
     max-width: 100%;
 }
 
@@ -158,8 +159,8 @@ li {
 }
 
 img {
-    max-width: 18rem;
-    max-height: 18rem;
+    /* max-width: 18rem;
+    max-height: 18rem; */
     transition: var(--transition-three);
 }
 
@@ -316,7 +317,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 
-    background-color: #494f5556;
+    background-color: #494f55;
     transition: var(--transition-three);
 }
 
@@ -382,6 +383,8 @@ nav a:hover {
 }
 
 .portrait {
+    max-height: 15rem;
+    margin-bottom: 1em;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 1px, rgba(0, 0, 0, 0.3) 0px 4px 2px, rgba(0, 0, 0, 0.3) 0px 8px 4px, rgba(0, 0, 0, 0.2) 0px 16px 8px, rgba(0, 0, 0, 0.3) 0px 32px 16px;    
 }
 
@@ -401,32 +404,13 @@ nav a:hover {
     margin-top: 2em;
 }
 
-.project_img {
-    border-radius: .5rem;
-    overflow: hidden;
-    position: absolute;
-    top: .5em;
-    left: 1em;
-    z-index: -1;
-}
-
-.project_img img {
-    max-width: 15rem;
-    min-height: 20rem;
-}
-
-.projects_list_container {
-    margin-top: 1.5em;
-    justify-items: center;
-}
-
 .project_card {
     text-align: left;
     max-width: 15rem;
     gap: 1em;
     padding: 1em;
     border-radius: .5rem;
-    background-color: #494f55;
+    background-color: rgba(73, 79, 85, 0.8);
     z-index: 3;
 }
 
@@ -444,6 +428,22 @@ nav a:hover {
 
 .languages {
     font-size: var(--fs-sml);
+}
+
+.project_img {
+    border-radius: .5rem;
+    overflow: hidden;
+    position: absolute;
+    top: .5em;
+    left: 1em;
+    z-index: -1;
+    height: 20rem;
+    width: 15rem;
+}
+
+.projects_list_container {
+    margin-top: 1.5em;
+    justify-items: center;
 }
 
 .project_card, .project_img {
@@ -541,6 +541,10 @@ nav a:hover {
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
     }
+
+    .portrait {
+        min-height: 10rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -551,6 +555,10 @@ nav a:hover {
 
     .content_container {
         background-color: rgba(255, 255, 255, 0.039);
+    }
+
+    .portrait {
+        min-height: 20rem;
     }
 
     .social_media {
@@ -586,7 +594,6 @@ nav a:hover {
 
     .project_card {
         max-width: none;
-        
         max-width: 30rem;
     }
 
@@ -596,13 +603,10 @@ nav a:hover {
         left: 0;
         position: relative;
         display: inline;
-        height: 80%;
+        height: 15rem;
         max-width: 20rem;
     }
 
-    .project_img img {
-        min-width: 100%;
-    }
 
     .card_container:nth-child(1) .project_img,
     .card_container:nth-child(3) .project_img {
