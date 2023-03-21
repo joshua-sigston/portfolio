@@ -9,173 +9,89 @@
     <!-- styles link -->
     <link rel="stylesheet" href="styles.css">
     <!-- font links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Josefin+Sans:wght@300&family=NTR&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Libre+Franklin:wght@400;500;600&family=Overpass:wght@400;500&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
 
-    <div class="nav_container">
-            <nav class="nav" id="nav">
-                <li><a href="#about-me" class="nav_item">About Me</a></li>
-                <li><a href="#projects" class="nav_item">Projects</a></li>
-                <li><a href="#contact" class="nav_item">Contact</a></li>
-                <li><a href="#hero" class="nav_item">To Top</a></li>
-            </nav>
-        <!-- hamburger menu -->
-        <div class="hamburger_menu flex_column" id="hamburger">
-            <div class="patty" id="patty-one"></div>
-            <div class="patty" id="patty-two"></div>
-            <div class="patty" id="patty-three"></div>
+    <!-- header -->
+    <header class="flex_column">
+        <nav class="nav_desktop">
+            <a href="#home">Home</a>
+            <a href="#bio">Bio</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <nav class="nav_mobile flex_column" id="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#bio">Bio</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hamburger flex_column" id="hamburger">
+            <div class="patty one"></div>
+            <div class="patty two"></div>
+            <div class="patty two"></div>
         </div>
-    </div>
+    </header>
 
-    <section class="hero_section flex_column center" id="hero">
-
-        <div class="content_container flex_column">
-            <div class="expression_one flex_column">
-                <p>Welcome, <span>I'm Joshua Sigston</span></p>
+    <!-- hero section -->
+    <section class="hero grid" id="home">
+        <div class="left_col flex_column">
+            <p>Hello, I'm Josh</p>
+            <h2>
+                <div class="word_wrapper"><span>Front</span></div>
+                <div class="word_wrapper"><span>End</span></div>
+                <div class="word_wrapper"><span>Developer</span></div>
+            </h2>
+            <p class="sub_heading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aliquid iure aut, illo laudantium aliquam.</p>
+            <div class="btn_container">
+                <button class="btn_cv"><a href="#">Download CV</a></button>
             </div>
-
-            <div class="social_media flex_column">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-        
-            <div class="expression_two">
-                <p>aspiring <span>Web Developer</span></p>
-            </div>
-
-            <div class="expression_three">
-                <p>I build and design on the <span>Web</span> to make it a creative experience.</p>
-            </div>
-        </div>
-        
-        <div class="explore flex_column">
-            <h3>Explore</h3>
-            <div class="explore_line"></div>
-        </div> 
-
-    </section>
-
-
-    <section class="about_me grid" id="about-me">
-        <div class="divider flex_row center" id="divider-one">
-            <h3 class="flex_row center">Thanks for continuing</h3>
-        </div>
-        <div class="title_container flex_column center">
-            <h2>Who I Am</h2>
-            <div class="file_container flex_row">
-                <i class="fa-sharp fa-solid fa-envelope mail"></i>
-                <i class="fa-solid fa-file cv"></i>
+            <div class="index_container">
+                <div class="diamond">Home</div>
+                <div class="diamond">bio</div>
+                <div class="diamond">projects</div>
+                <div class="diamond">contact</div>
             </div>
         </div>
-        <p class="short_bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nemo veritatis dolorem magnam quas quam quisquam ipsum harum eveniet cum.</p>
-        <img src="images/daniel-monteiro-WWcL2OQRR6c-unsplash.jpg" alt="" class="portrait">
-    </section>
-
-    <section class="projects flex_column" id="projects">
-        <div class="divider flex_row center" id="divider-two">
-            <h3 class="flex_row center">Thanks for continuing</h3>
-        </div>
-        <h2>My Resources</h2>
-        <p>Here are my projects with the languages I am using:</p>
-        
-        <div class="projects_list_container grid">
-
-            <div class="card_container">
-                <div class="project_card grid">
-                    <div class="title_container">
-                        <p>title: </p>
-                        <h2>Gym Website</h2>
-                    </div>
-                    <p class="synopsis">A proposed website I built. My first webpage project.</p>
-                    <p class="languages">html - css - javacript</p>
-                </div>
-                <div class="project_img">
-                    <img src="images/gym-website.png" alt="">
-                </div>
+        <div class="right_col flex_column">
+            <div class="img_container">
+                <img src="images/polina-kondrashova-fhrWAh2HMnM-unsplash.jpg" alt="profile" class="hero_img">
             </div>
-
-            <div class="card_container">
-                <div class="project_card grid">
-                    <div class="title_container">
-                        <p>title: </p>
-                        <h2>Cafe Website</h2>
-                    </div>
-                    <p class="synopsis">A proposed website I built for a local cafe. Designed to allow the user experience the vibe of the cafe while eliminting the hassel of find what is offered.</p>
-                    <p class="languages">html - css - javacript</p>
-                </div>
-                <div class="project_img">
-                    <img src="/images/cafe-website.png" alt="">
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="contact flex_column center" id="contact">
-        <div class="divider flex_row center" id="divider-three">
-            <h3 class="flex_row center">Thanks for continuing</h3>
-        </div>
-        <h2>The many ways of contacting me</h2>
-        <div class="social_media flex_row">
-            <i class="fa-sharp fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-        </div>
-
-    </section>
-
-
-        <!-- <div class="nav_frame left_frame flex_column inactive" id="nav-frame">
-            <div class="left_line"></div>
-            <div class="social_media flex_column">
-                <i class="fa-brands fa-square-github"></i>
+            <div class="icons_container">
                 <i class="fa-brands fa-square-instagram"></i>
                 <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-github"></i>
             </div>
         </div>
+    </section>
 
-        <div class="nav_frame right_frame flex_column inactive" id="nav-frame">
-            <div class="nav_side_bar flex_column">
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#talents">Talents</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#top-section" class="back_to_top"><i class="fa-solid fa-circle-up"></i></a></li>
+    <!-- bio section -->
+    <section class="bio grid">
+        <div class="left_col flex_column">
+            <div class="img_container">
+                <img src="images/polina-kondrashova-fhrWAh2HMnM-unsplash.jpg" alt="profile" class="hero_img">
             </div>
-            <div class="right_line"></div> -->
         </div>
-
-<!-- mobile navigation -->
-
-    <div class="hamburger_menu inactive" id="hamburger-menu">
-        <div class="hamburger_line"></div>   
-    </div>
-    <nav class="mobile_nav inactive" id="mobile-nav">
-        <li><a href="#about-me" class="mobile_link">About Me</a></li>
-        <li><a href="#talents" class="mobile_link">Talents</a></li>
-        <li><a href="#projects" class="mobile_link">Projects</a></li>
-        <li><a href="#contact" class="mobile_link">Contact</a></li>
-    </nav>
+        <div class="right_col flex_column">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit architecto quidem suscipit. Ea ipsam, cum, atque ullam sint, architecto exercitationem placeat laborum voluptas ad adipisci!</p>
+            <div class="icons_container">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-github"></i>
+            </div>        
+        </div>
+    </section>
+    <section class="projects">
         
+    </section>
+
+    <script src="script.js"></script>
 </body>
-
-<!-- functional scripts -->
-<script src="script.js"></script>
-<!-- scroll movement for dividers -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-<script>gsap.from("#divider-one", {scrollTrigger: {scrub: true}, y: 300})</script>
-<script>gsap.from("#divider-two", {scrollTrigger: {scrub: true}, y: 300})</script>
-<script>gsap.from("#divider-three", {scrollTrigger: {scrub: true}, y: 900})</script>
-<!-- <script src="scripts/script-talents-section.js"></script>
-<script src="scripts/script-nav-frame.js"></script>
-<script src="scripts/script-mobile-nav.js"></script> -->
-
 </html>
